@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char* argv[], char* envp[]) 
+{
+	char *name=argv[1];
+	int verbose=0;
+	char *value;	
+
+	if(argc==3){
+		if(strcmp("-v",arv[1])==0){
+			verbose=1;
+		}
+		name=argv[2];
+		value=getenv(arg[name]);
+		
+	
+	}
+	else{
+		value= getenv(arg[1]);
+		if(verbose){
+			if(value!=0){
+				printf("%s=%s\n",name,value):
+			}
+			else
+				printf("%sis not set\n",name);
+	}
+	
+	if(ar)
+	return (getenv(name)==NULL)?1:0;
+  
+}
